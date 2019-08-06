@@ -23,6 +23,7 @@ class _TabNavigator extends State<TabNavigator>{
   final _defaultColor = Colors.grey;
   final _activeColor = Colors.blue;
   int _currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
 
@@ -31,7 +32,6 @@ class _TabNavigator extends State<TabNavigator>{
       body: PageView(//根结点
         controller: _controller,
         children: <Widget>[//添加tab四个页面
-
           HomePage(),
           SearchPage(),
           TravelPage(),
